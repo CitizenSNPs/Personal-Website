@@ -8,9 +8,11 @@ body {
   box-sizing: border-box
 }
 
+
+
 /*NAVBAR*/
 .navbar {
-  background-color: #31b0d5;
+  background-color: #0B0c10;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -24,7 +26,12 @@ body {
   color: white;
   padding: 14px 16px;
   text-decoration: none;
+  border-bottom: hidden;
+
 }
+
+
+
 
 .anchor {
   display: block;
@@ -36,7 +43,7 @@ body {
 /*JUMBOTRON*/
 .jumbotron {
   height: 100vh; /*height to 100% of view height*/
-  background: #31b0d5; /*background color to blue*/
+  background: #0B0c10; /*background color to blue*/
   margin-bottom: 0; /*no bottom margin*/
 
   display: flex;
@@ -53,11 +60,13 @@ body {
 }
 
 .jumbotron-text h1 {
-  /*YOUR NAME*/
+  /* NAME */
   text-transform: uppercase;
   font-weight: 800;
   font-size: 3em;
   margin-bottom: 0;
+  color: #66fcf1;
+
 }
 
 .jumbotron-text p {
