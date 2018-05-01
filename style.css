@@ -1,6 +1,6 @@
 body {
   font-family: 'Raleway', sans-serif;
-  background: rgba(242, 242, 242, .6);
+  background: rgba(197, 198, 199, 0.6);
   margin: 0;
 }
 
@@ -67,6 +67,32 @@ body {
   margin-bottom: 0;
   color: #66fcf1;
 
+}
+
+.jumbotron-text h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s 5;
+    animation-fill-mode: forwards;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 85% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+  100% {border-color: transparent; }
 }
 
 .jumbotron-text p {
@@ -190,7 +216,7 @@ h2 {
 
 .card-header {
   padding: .75rem 1.25rem;
-  background-color: white;
+  background-color: #1f2833;
   border-bottom: 1px solid rgba(0,0,0,.075);
   border-top-left-radius: .25rem;
   border-top-right-radius: .25rem;
@@ -204,7 +230,7 @@ h2 {
 h4 {
   margin: 0;
   font-weight: 400;
-  color: grey;
+  color: white;
 }
 
 .job-title {
@@ -212,6 +238,37 @@ h4 {
 }
 
 /*PROJECTS*/
+
+
+.project-card-hidden{
+  display: flex;
+  flex-direction: row;
+  background-color: #1f2833;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+  height: 200px;
+  width: 50%;
+  transition: width 300ms linear;
+}
+
+.project-card-hidden:hover{
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+  width: 100%;
+}
+
+.project-card-hidden:hover .project-content{
+  visibility: visible;
+}
+
 .project-card {
   display: flex;
   flex-direction: row;
@@ -222,6 +279,9 @@ h4 {
   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
 }
 
+.project-icon{
+  height: 100%;
+}
 .project-image {
   flex: 1 0 auto;
 }
@@ -233,18 +293,20 @@ h4 {
 }
 
 .project-content {
-  flex: 1 1 auto;
+  flex: 2 1 auto;
   padding: 1.25rem;
-
   display: flex;
   justify-content: center;
   flex-direction: column;
+  visibility: hidden;
+  overflow: hidden;
 }
 
 /*SKILLS*/
 .ul-skills {
   text-align: center;
   padding-left: 0;
+  list-style-type: none;
 }
 
 .li-skills {
@@ -256,6 +318,7 @@ h4 {
   list-style: none;
   cursor: default;
   font-size: 1.2em;
+  list-style-type: none;
 }
 
 /*CONTACT*/
@@ -303,4 +366,40 @@ h4 {
 
 .white-text {
   color: white;
+}
+
+.hex{
+  display: inline-block;
+  position: relative;
+  width: 5vh;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
+  min-width: 10%;
+
+}
+.hextop{
+width: 0;
+border-bottom: 30px solid #66fcf1;
+border-left: 52px solid transparent;
+border-right: 52px solid transparent;
+}
+.hexmid{
+width: 104px;
+height: 60px;
+background-color: #66fcf1;
+list-style-type: none;
+text-align:center;
+position: relative;
+}
+
+.hexbottom{
+width: 0;
+border-top: 30px solid #66fcf1;
+border-left: 52px solid transparent;
+border-right: 52px solid transparent;
+}
+
+#css{
+  position: absolute;
+  z-index: 5;
 }
