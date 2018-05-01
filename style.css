@@ -251,7 +251,7 @@ h4 {
   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
   height: 200px;
   width: 50%;
-  transition: width 300ms linear;
+  transition: width, height 300ms;
 }
 
 .project-card-hidden:hover{
@@ -263,6 +263,7 @@ h4 {
   margin-bottom: 30px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
   width: 100%;
+  height: 40vh;
 }
 
 .project-card-hidden:hover .project-content{
@@ -281,7 +282,10 @@ h4 {
 
 .project-icon{
   height: 100%;
+  cursor: pointer;
+  filter: hue-rotate();
 }
+
 .project-image {
   flex: 1 0 auto;
 }
@@ -292,14 +296,19 @@ h4 {
   border-bottom-left-radius: 5px;
 }
 
+.project-card-hidden h2{
+  margin: auto;
+  margin-left: 3.5%;
+}
+
 .project-content {
-  flex: 2 1 auto;
+  flex: 1 1 auto;
   padding: 1.25rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   visibility: hidden;
-  overflow: hidden;
+
 }
 
 /*SKILLS*/
