@@ -1,7 +1,8 @@
-body {
+html, body {
   font-family: 'Raleway', sans-serif;
   background: rgba(197, 198, 199, 0.6);
   margin: 0;
+  padding: 0;
 }
 
 * {
@@ -41,13 +42,14 @@ body {
 }
 
 /*JUMBOTRON*/
-.jumbotron {
+.jumbotron-fluid {
   height: 100vh; /*height to 100% of view height*/
   background: #0B0c10; /*background color to blue*/
   margin-bottom: 0; /*no bottom margin*/
-
   display: flex;
   flex-direction: column;
+
+
 }
 
 .jumbotron-text {
@@ -153,12 +155,11 @@ body {
 }
 
 #portrait{
-  height: 200px;
-  width: 200px;
-  position: relative;
-  left: 20%;
+  height: 100%;
+  width: 80%;
+  left: 0%;
   top:26.5%;
-  border-radius: 50%;
+  border-radius: 0%;
   z-index: 0;
   box-shadow: 0px 3px 10px darkgrey;
 }
@@ -187,7 +188,7 @@ body {
 }
 
 h2 {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 2rem;
   color: #31b0d5;
   text-transform: uppercase;
@@ -323,12 +324,15 @@ h4 {
   margin: 7px;
   padding: 5px 10px;
   color: white;
-  background: #31b0d5;
+  background: #1f2833;
   list-style: none;
   cursor: default;
   font-size: 1.2em;
   list-style-type: none;
+  border-radius: 5%;
 }
+
+
 
 /*CONTACT*/
 .blue {
@@ -377,36 +381,6 @@ h4 {
   color: white;
 }
 
-.hex{
-  display: inline-block;
-  position: relative;
-  width: 5vh;
-  margin-left: 3.5%;
-  margin-right: 3.5%;
-  min-width: 10%;
-
-}
-.hextop{
-width: 0;
-border-bottom: 30px solid #66fcf1;
-border-left: 52px solid transparent;
-border-right: 52px solid transparent;
-}
-.hexmid{
-width: 104px;
-height: 60px;
-background-color: #66fcf1;
-list-style-type: none;
-text-align:center;
-position: relative;
-}
-
-.hexbottom{
-width: 0;
-border-top: 30px solid #66fcf1;
-border-left: 52px solid transparent;
-border-right: 52px solid transparent;
-}
 
 #css{
   position: absolute;
