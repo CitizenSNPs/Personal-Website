@@ -3,7 +3,7 @@ html, body {
   background: rgba(197, 198, 199, 0.6);
   margin: 0;
   padding: 0;
-  width: 100vw;
+  width: 150vw;
 
 }
 
@@ -45,7 +45,7 @@ html, body {
 
 /*JUMBOTRON*/
 .jumbotron-fluid {
-  width: 100vw;
+  width: 150vw;
   height: 100vh; /*height to 100% of view height*/
   background: #0B0c10; /*background color to blue*/
   margin-bottom: 0; /*no bottom margin*/
@@ -119,7 +119,7 @@ html, body {
 .container {
   display: flex;
   flex-direction: column;
-  width: 100vw;
+  width: 150vw;
   margin-left: auto;
   margin-right: auto;
 }
