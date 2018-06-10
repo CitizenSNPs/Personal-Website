@@ -2,8 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Derelle Kirksey</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:1255px)" href="style.css">
+    <link rel="stylesheet" media="screen and (min-width:837px) and (max-width: 1255px)" href="style2.css">
+    <link rel="stylesheet" media="screen and (max-width: 837px) and (min-width: 595px)" href="style3.css">
+    <link rel="stylesheet" media="screen and (max-width: 595px)" href="style4.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,7 +32,7 @@
 
         <div class="jumbotron-text">
           <h1>Derelle Kirksey</h1>
-          <p>Aspiring Web Developer in San Diego, CA.</p>
+          <p>Web Developer in San Diego, CA.</p>
         </div>
         <div class="jumbotron-social">
           <ul class="ul-social">
@@ -49,34 +53,42 @@
         </div>
 
       </div>
+  </div>
       <!-- END HEADER -->
 
 
 
       <!-- BEGIN ABOUT -->
+      <div class = "container">
       <div class="row white box-shadow">
         <div class="side-content" id="portrait-container">  <img src="portrait.jpg" id = "portrait" alt=""></div>
         <div class="main-content">
           <div class="content-header">
             <a class="anchor" name="about"></a>
-            <h2 id = "about-header">About</h2>
+            <h2 class="section_title" id = "about-header">About</h2>
           </div>
-          <div class="content-body">
+          <div class="content-body" id="about">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
-        <div class="side-content"></div>
+
       </div>
+    </div>
       <!-- END ABOUT -->
 
       <!-- BEGIN EXPERIENCE -->
-      <div class="row">
+
+
+
+
+
+      </div>
         <div class="side-content"></div>
         <div class="main-content">
           <div class="content-header">
             <a class="anchor" name="experience"></a>
-            <h2>Experience</h2>
+            <h2 class="section_title">Work Experience</h2>
           </div>
           <!-- CARD #1 -->
           <div class="content-body">
@@ -89,26 +101,29 @@
               </div>
             </div>
 
+
+
           <!-- CARD #2 -->
 
             <div class="card">
               <div class="card-header">
-                <h4>Emory Sleep Laboratory <span class="job-title">Research Assistant</span></h4>
+                <h4>Emory Sleep Clinic   <span class="job-title">Research Assistant</span></h4>
               </div>
               <div class="card-content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
+          </div>
 
       <!-- END EXPERIENCE -->
 
       <!-- BEGIN EDUCATION -->
       <div class="row white box-shadow">
-        <div class="side-content"></div>
+
         <div class="main-content">
           <div class="content-header">
             <a class="anchor" name="education"></a>
-            <h2>Education</h2>
+            <h2 class="section_title">Education</h2>
           </div>
           <div class="content-body">
 
@@ -125,7 +140,7 @@
 
           </div>
         </div>
-        <div class="side-content"></div>
+
       </div>
       <!-- END EDUCATION -->
 
@@ -135,7 +150,7 @@
         <div class="main-content-lg">
           <div class="content-header">
             <a class="anchor" name="projects"></a>
-            <h2>Projects</h2>
+            <h2 class="section_title">Projects</h2>
           </div>
 
 
@@ -163,9 +178,9 @@
             <div class="project-card-hidden">
 
               <img class= "project-icon" src="./website-icon.png" alt="">
-              <h2>TBD</h2>
+              <h2>Yelp App</h2>
               <div class="project-content">
-                <p>Watch this space</p>
+                <p>Web app that can make meal decisions for you using Yelp's Fusion API. Click on the icon to view the code!</p>
 
             </div>
           </div>
@@ -181,19 +196,19 @@
               <div class="main-content">
                 <div class="content-header">
                   <a class="anchor" name="skills"></a>
-                  <h2>Skills</h2>
+                  <h2 class="section_title">Skills</h2>
                 </div>
                 <div class="content-body">
                   <ul class="ul-skills">
                     <li class="li-skills">Javascript</li>
                     <li class="li-skills">HTML5</li>
                     <li class="li-skills">CSS3</li>
-                    <li class="li-skills">React</li>
+                    <li class="li-skills">NodeJs</li>
                     <li class="li-skills">Bootstrap</li>
                     <li class="li-skills">Express</li>
                     <li class="li-skills">jQuery</li>
                     <li class="li-skills">Python</li>
-                    <li class="li-skills">Pandas</li>
+                    <li class="li-skills">Java</li>
                     <li class="li-skills">Machine Learning</li>
                     <li class="li-skills">Data Analytics</li>
                   </ul>
@@ -217,6 +232,7 @@
       <!-- END FOOTER -->
 
     </div>
+
 
 
   <script type="text/javascript" src="scripts.js"></script>

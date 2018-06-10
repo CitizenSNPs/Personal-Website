@@ -3,6 +3,8 @@ html, body {
   background: rgba(197, 198, 199, 0.6);
   margin: 0;
   padding: 0;
+  width: 100vw;
+
 }
 
 * {
@@ -84,6 +86,7 @@ html, body {
 
 }
 
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -136,10 +139,15 @@ html, body {
   /*sets up flexbox*/
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .row {
   display: flex;
+  text-align: center;
+
 }
 
 .white {
@@ -150,13 +158,10 @@ html, body {
   flex: 0 0 16.6%;
 }
 
-.side-content#portrait-container {
-  flex: 0 0 21%;
-}
 
 #portrait{
   height: 100%;
-  width: 80%;
+  width: 100%;
   left: 0%;
   top:26.5%;
   border-radius: 0%;
@@ -166,9 +171,12 @@ html, body {
 
 
 .main-content {
-  flex: 0 0 66.6%;
+  /* flex: 0 0 66.6%; */
   margin-top: 2rem;
   margin-bottom: 3rem;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .side-content-sm {
@@ -189,20 +197,27 @@ html, body {
 
 h2 {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 2vw;
   color: #31b0d5;
   text-transform: uppercase;
   text-align: center;
 }
 
 .content-body {
+
   line-height: 1.5;
   color: rgba(0,0,0,.75);
+
+}
+
+.content-body#about{
+  text-align: left;
+  margin-left: 3%;
 }
 
 #about-header{
   position: relative;
-  left: -7%;
+  left: -10.5%;
 }
 
 /*EDUCATION*/
@@ -213,6 +228,9 @@ h2 {
   border: 1px solid rgba(0,0,0,.125);
   border-radius: .25rem;
   margin-bottom: 30px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card-header {
@@ -223,9 +241,15 @@ h2 {
   border-top-right-radius: .25rem;
 }
 
+.card-header {
+  text-align: left;
+}
+}
+
 .card-content {
   padding: .25rem 1.25rem;
   flex: 1 1 auto;
+  text-align: center;
 }
 
 h4 {
@@ -251,8 +275,10 @@ h4 {
   margin-bottom: 30px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
   height: 200px;
-  width: 50%;
+  width: 40%;
   transition: width 500ms;
+  text-align: center;
+  min-width: 300px;
 }
 
 .project-card-hidden:hover{
@@ -285,6 +311,7 @@ h4 {
   height: 100%;
   cursor: pointer;
   filter: hue-rotate();
+  max-width: 50%;
 }
 
 /* .project-icon#bracket{
@@ -303,7 +330,7 @@ h4 {
 
 .project-card-hidden h2{
   margin: auto;
-  margin-left: 3.5%;
+  margin-left: 10%;
 }
 
 .project-content {
@@ -325,6 +352,7 @@ h4 {
 
 .li-skills {
   display: inline-block;
+  height: 40px;
   margin: 7px;
   padding: 5px 10px;
   color: white;
@@ -334,6 +362,10 @@ h4 {
   font-size: 1.2em;
   list-style-type: none;
   border-radius: 5%;
+}
+
+.li-skills:hover{
+  color: #66fcf1;
 }
 
 
@@ -381,8 +413,15 @@ h4 {
   transition: .5s ease all;
 }
 
+
 .white-text {
   color: white;
+}
+
+.row.white.box-shadow{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 
@@ -390,3 +429,7 @@ h4 {
   position: absolute;
   z-index: 5;
 }
+
+img, embed, object, video, h2{
+			max-width: 100%;
+		}
