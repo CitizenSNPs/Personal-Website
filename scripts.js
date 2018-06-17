@@ -1,7 +1,6 @@
-$(document).ready(function(){
 
 $('.navbar a').mouseover(function(){
-  $(this).css({'color':'#66fcf1'});
+  $(this).css({'color':'#ff8f0f'});
 });
 
 $('.navbar a').mouseout(function(){
@@ -9,11 +8,9 @@ $('.navbar a').mouseout(function(){
 });
 
 $('.social').mouseover(function(){
-  $(this).css({'color':'#66fcf1'});
+  $(this).css({'color':'#ff8f0f'});
 });
 
 $('.social').mouseout(function(){
   $(this).css({'color':'white'})
-});
-
 });

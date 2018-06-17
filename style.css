@@ -45,8 +45,10 @@ html, body {
 
 /*JUMBOTRON*/
 .jumbotron-fluid {
+  background-image: url('./rainbows_edit2.jpg');
+  background-size: 100vw;
   height: 100vh; /*height to 100% of view height*/
-  background: #0B0c10; /*background color to blue*/
+  /* background: #0B0c10; /*background color to blue*/
   margin-bottom: 0; /*no bottom margin*/
   display: flex;
   flex-direction: column;
@@ -314,9 +316,13 @@ h4 {
   max-width: 50%;
 }
 
-/* .project-icon#bracket{
-  width: 30%;
-} */
+.project-icon.food{
+  height: 85%;
+  position: relative;
+  top: 5%;
+  left: 5%;
+}
+
 
 .project-image {
   flex: 1 0 auto;
