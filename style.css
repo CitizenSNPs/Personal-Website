@@ -250,12 +250,16 @@ h2 {
   padding: 1rem 1rem;
   flex: 1 1 auto;
   text-align: center;
+}
 
+.card-content p{
+  font-size: 14pt;
 }
 
 h4 {
+  font-size: 20pt;
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
 }
 
@@ -346,6 +350,8 @@ h4 {
 }
 
 .project-content {
+  position: relative;
+  top: -20%;
   flex: 1 1 auto;
   padding: 1.25rem;
   display: flex block;
@@ -437,6 +443,8 @@ h4 {
 }
 
 footer{
+  color: white;
+  text-align: center;
   background: #1f2833;
   height: 35px;
   position: relative;
