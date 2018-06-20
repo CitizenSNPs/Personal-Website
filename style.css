@@ -15,7 +15,8 @@ html, body {
 
 /*NAVBAR*/
 .navbar {
-  background-color: #1f2833;
+  background-color: black;
+  opacity: 0.8;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
@@ -45,10 +46,11 @@ html, body {
 
 /*JUMBOTRON*/
 .jumbotron-fluid {
-  background-image: url('./rainbows_edit2.jpg');
+  background-image: url('./coffee.jpg');
   background-size: 100vw;
   height: 100vh; /*height to 100% of view height*/
   /* background: #0B0c10; /*background color to blue*/
+  min-height: 600px;
   margin-bottom: 0; /*no bottom margin*/
   display: flex;
   flex-direction: column;
@@ -68,38 +70,42 @@ html, body {
 .jumbotron-text h1 {
   /* NAME */
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 400;
   font-size: 3em;
   margin-bottom: 0;
-  color: #66fcf1;
+  color: white;
+  letter-spacing: .15em;
+  white-space: nowrap;
 
 }
 
-.jumbotron-text h1 {
+.animation{
+  width: 50%;
+  margin-left: 30vw;
+}
+
+.jumbotron-text p{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #ff8f0f; /* The typwriter cursor */
+  border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s 5;
-    animation-fill-mode: forwards;
-
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+  margin-left: 50px;
 }
-
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 85% }
+  from { width: 0% }
+  to { width: 100%}
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-  100% {border-color: transparent; }
+  from, to { border-color: orange }
+  100% { border-color: transparent; }
 }
 
 .jumbotron-text p {
@@ -162,23 +168,24 @@ html, body {
 
 
 #portrait{
-  height: 100%;
-  width: 100%;
-  left: 0%;
-  top:26.5%;
-  border-radius: 0%;
+  position: absolute;
+  height: 20%;
+  width: 9.5%;
+  border-radius: 50%;
   z-index: 0;
-  box-shadow: 0px 3px 10px darkgrey;
+  top: 980px;
+  left: 46%;
+  border: white solid 5px;
+
 }
 
-
 .main-content {
-  /* flex: 0 0 66.6%; */
-  margin-top: 2rem;
   margin-bottom: 3rem;
-  width: 95%;
+  height: 100%;
+  max-height: 100%;
+  width: 70%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right:auto;
 }
 
 .side-content-sm {
@@ -192,9 +199,9 @@ html, body {
 }
 
 .box-shadow {
-  -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 }
 
 
@@ -214,13 +221,18 @@ h2 {
 }
 
 .content-body#about{
-  text-align: left;
-  margin-left: 3%;
+  text-align: center;
 }
 
 #about-header{
-  position: relative;
-  left: -10.5%;
+  color: orange;
+  font-size: 36pt;
+  font-weight: 400;
+  text-shadow: lightgray 3px 3px 10px;
+}
+
+#about p{
+  font-size: 16pt;
 }
 
 
@@ -440,6 +452,9 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  width: 100vw;
+  height: 40%;
+  opacity: .90;
 }
 
 footer{
