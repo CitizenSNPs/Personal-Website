@@ -294,18 +294,16 @@ h4 {
   display: inline-block;
   flex-wrap: wrap;
   flex-direction: row;
-  background-color: #1f2833;
-  border: 1px solid rgba(0,0,0,.125);
+  background-color: white;
+  border: 5px solid white;
   border-radius: 5px;
   margin: auto;
   margin-bottom: 30px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
-  height: 250px;;
-  width: 30%;
-  transition: width 500ms;
+  height: 280px;;
+  width: 16%;
   text-align: center;
-  min-width: 300px;
-  margin-left: 1%;
+  margin-left: 2%;
   vertical-align: bottom;
 }
 
@@ -321,49 +319,41 @@ h4 {
 }
 
 .project_title{
-  position: absolute;
   top: 30%;
-  left: 30%;
-  color: white;
-  font-family: Arial;
-  font-weight: 400;
-  font-size: 20pt;
+  color: #585858;
+  font-family: Helvetica;
+  font-size: 12pt;
+  margin-bottom: 0px;
+}
+
+.project_subtitle{
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 10pt;
 }
 
 .project-icon{
-  position: absolute;
-  left: 10%;
-  top: 25%;
-  height: 35%;
+  background-color: #ff8f0f;
+  border-radius: 50%;
+  border-color: #ff8f0f;
+  height: 20%;
   cursor: pointer;
   filter: hue-rotate();
   max-width: 50%;
-}
-
-.project-icon.food{
-  height: 45%;
-  position: relative;
-  top: 5%;
-  left: 5%;
+  opacity: .97;
+  margin-top: 5%;
+  transform: scale(1.2);
 }
 
 
-.project-image {
-  flex: 1 0 auto;
-}
 
-.project-image img {
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
+
 
 .project-card-hidden h2{
-  display: inline;
-  position: absolute;
-  margin: auto;
-  margin-left: 10%;
-}
+  font-weight: bold;
 
+}
+/*
 #card1{
 background: url('./website-background-edit.jpg');
 background-size: cover;
@@ -384,7 +374,7 @@ background-repeat: no-repeat;
   background: url('./files-background-edit.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 
 
 .project-content {
@@ -395,7 +385,7 @@ background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  opacity: 0;
+  text-align: center;
 
 }
 
@@ -433,11 +423,16 @@ background-repeat: no-repeat;
   height: 40%;
   border: white solid 10px;
   border-radius: 5px;
-
 }
 
 #contact_info p{
-  font-weight: 400;
+  font-weight: 500;
+  font-size: 13pt;
+  bottom: 8%;
+}
+
+#contact_name{
+  text-decoration-style: solid;
 }
 
 
