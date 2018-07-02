@@ -1,0 +1,401 @@
+* {
+  box-sizing: border-box
+}
+
+html, body {
+  font-family: 'Raleway', sans-serif;
+  background: rgba(197, 198, 199, 0.6);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+
+}
+
+/*NAVBAR*/
+.navbar {
+  background-color: black;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.navbar a {
+  font-weight: 200;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-bottom: hidden;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  top: -70px;
+  visibility: hidden;
+}
+
+/*JUMBOTRON*/
+.jumbotron-fluid {
+  background-image: url('../pics/coffee.jpg');
+  background-size: 100vw;
+  background-size: cover;
+  height: 80vh;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+  /*TAGLINE UNDER NAME*/
+.jumbotron-text {
+  font-weight: 400;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+  padding-top: 150px;
+}
+
+  /* NAME */
+.jumbotron-text h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin-bottom: 0;
+  color: white;
+  letter-spacing: .15em;
+  white-space: nowrap;
+}
+
+.animation{
+  margin: auto;
+  /* min-width: 700px; */
+}
+
+.jumbotron-text p{
+  font-size: .75em;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid transparent; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  animation:
+    typing 3s steps(40, end),
+    blink-caret 1s step-end 2.3s 7 backwards ;
+  max-width: 643px;
+}
+
+/* The typing effect */
+/* @keyframes typing {
+  from { width: 0% }
+  to { width: 100%;}
+} */
+
+/* The typewriter cursor effect */
+/* @keyframes blink-caret {
+  0%{ border-right: .15em solid orange; }
+  50% { border-color: transparent; }
+} */
+
+/*SOCIAL LINKS*/
+.ul-social {
+  text-align: center;
+  padding-left: 0;
+}
+
+.li-social-links {
+  display: inline-block;
+  list-style: none;
+}
+
+.social {
+  font-size: 2em;
+  color: white;
+  padding: 20px;
+}
+
+/*ARROW LINKS*/
+#down-arrow {
+  margin-top: auto;
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+
+#down-arrow a {
+  color: white;
+}
+
+#up-arrow  {
+  margin-top: auto;
+  text-align: center;
+}
+
+#up-arrow a{
+  color: white;
+}
+
+/*CONTENT*/
+.container {
+  /*sets up flexbox*/
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: flex;
+  text-align: center;
+  height: 425px;
+}
+
+.white {
+  background: white;
+}
+
+.side-content {
+  flex: 0 0 16.6%;
+}
+
+#portrait{
+  position: absolute;
+  height: 15vw;
+  width: 15vw;
+  max-width: 150px;
+  max-height: 150px;
+  min-width: 115px;
+  min-height: 115px;
+  border-radius: 50%;
+  z-index: 0;
+  top: 95%;
+  left: 40.5%;
+  border: white solid 10px;
+}
+
+.main-content {
+  position: relative;
+  margin-bottom: 3rem;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.main-content-lg {
+  flex: 0 0 100%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+
+.row.white.box-shadow{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 100vw;
+  height: 40%;
+  opacity: .90;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2em;
+  color: 		#585858;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content-body {
+  line-height: 1.5;
+  color: rgba(0,0,0,.75);
+}
+
+.content-body#about{
+  text-align: center;
+}
+
+#about-header{
+  color: orange;
+  font-size: 36pt;
+  font-weight: 400;
+  text-shadow: lightgray 3px 3px 10px;
+}
+
+#about p{
+  font-size: 16pt;
+}
+
+/*EDUCATION*/
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(197, 198, 199, 0);
+  margin-bottom: 30px;
+  width: 100%;
+  margin-left: 0%;
+  margin-right: auto;
+}
+
+.card-header {
+  padding: .75rem 1.25rem;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.card-header {
+  text-align: left;
+}
+
+.card-content {
+  padding: 1rem 1rem;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.card-content p{
+  font-size: 14pt;
+}
+
+h4 {
+  font-size: 1.2em;
+  margin: 0;
+  font-weight: 500;
+  color: white;
+}
+
+.job-title {
+  float: right;
+}
+
+.first_section{
+  display: inline-block;
+}
+
+/*PROJECTS*/
+
+.project-card-hidden{
+  position: relative;
+  display: inline-block;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: transparent;
+  border-radius: 5px;
+  margin: auto;
+  margin-bottom: 30px;
+  cursor: pointer;
+  height: 280px;;
+  width: 20%;
+  text-align: center;
+  margin-left: 2%;
+  vertical-align: bottom;
+}
+
+
+.project-card-hidden h2{
+  font-weight: bold;
+}
+
+.project-card-hidden p{
+  color: black;
+  font-size: .9em;
+}
+
+.project_title{
+  top: 30%;
+  color: #585858;
+  font-family: Helvetica;
+  font-size: 12pt;
+  margin-bottom: 0px;
+}
+
+.project_subtitle{
+  margin-top: 0px;
+  padding-top: 0px;
+  font-size: 10pt;
+}
+
+.project-icon{
+  border-radius: 50%;
+  height: 20%;
+  max-width: 50%;
+  opacity: .97;
+  margin-top: 5%;
+  transform: scale(1.2);
+}
+
+.project-content {
+  position: relative;
+  top: -20%;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+/*SKILLS*/
+.li-skills {
+  display: inline-block;
+  height:40px;
+  margin: 7px;
+  padding: 5px 10px;
+  color: white;
+  background: #ff8f0f;
+  font-size: 1.2em;
+  border-radius: 5%;
+}
+
+.ul-skills{
+  width: 100vw;
+  margin: auto;
+  padding: 0px;
+}
+
+/*CONTACT*/
+
+#contact_info{
+  color: #585858;
+  position: absolute;
+  top: 105%;
+  left: 30%;
+  text-align: center;
+  width: 40%;
+  height: 40%;
+  border-radius: 5px;
+}
+
+#contact_info p{
+  margin:10px;
+  font-weight: 500;
+  font-size: 13pt;
+  bottom: 8%;
+}
+
+.row.white.box-shadow.skills_section{
+  position: relative;
+  height: 350px;
+  color: black;
+}
+
+hr{
+  display: none;
+}
+
+
+img, embed, object, video, h2{
+			max-width: 100%;
+		}
